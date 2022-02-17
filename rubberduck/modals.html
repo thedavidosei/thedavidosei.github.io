@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+    <!--Cheatsheet CSS-->
+    <link rel="stylesheet" href="modalstyles.css">
+  
+    <!-- This is the selected font family-->
+     <link rel="css/styles.css" href="https://fonts.googleapis.com">
+     <link rel="css/styles.css" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Bootstrap Modals Cheatsheet</title>
+  </head>
+  <body>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">DAVID OSEI</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="#basic-modal">Basic Modal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#fullscreen-modal">Full Screen Modal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#scrollable-LM">Scrolling Long Modal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#vertically-centered">Vertically Centered</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <!--Header-->
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+        <h1 class=display-3>Bootstrap Modal Cheatsheet</h1>
+        <p class="lead">An introduction to building modals in bootstrap</p>
+    </div>
+  </header>
+
+  <!--What are Modals & Components-->
+
+  <section id="how-modals-work">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-6">
+          <h2>What are Modals</h2>
+          <p class="lead">Bootstrap Modals offer a lightweight, multi-purpose JavaScript popup that’s customizable and responsive. They can be used to display alert popups, videos, and images in a website. Bootstrap-based websites can use Bootstrap modals to showcase, for example, terms and conditions (as part of a signup process), videos (similar to a standard light box), or even social media widgets. You don’t have to write a single line of JavaScript to use them! All the code and styles are predefined by Bootstrap. All that’s required is that you use the proper markup and attributes and they just work.</p>
+        
+        </div>
+        <div class="col-lg-6">
+          <h2>Components</h2>
+            <p class="lead">Bootstrap Modals are divided into three primary sections: the header, body, and footer. Always include in your modal headers dismiss actions whenever possible, or provide another explicit dismiss action.</p>
+            </div>
+      </div>
+    </div>
+  </section>
+
+<!--Example Modals-->
+
+    <section class=bg-light id="basic-modal">
+    <div class="container mt-3">
+      <div class="row justify-content-start">
+        <div class="col-lg-12 md-8 sm-6">
+      <h2>Examples</h2>
+      <h3>Basic Modal</h3>
+      <p> The code below creates a basic modal.</p>
+   
+       <br>
+       <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Create the Button to trigger modal --&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle</span><span class="o">=</span><span class="s">"modal"</span> <span class="na">data-bs-target</span><span class="o">=</span><span class="s">"#exampleModal"</span><span class="p">&gt;</span>
+        Button Name Here
+<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+<span class="c">&lt;!-- Create Modal Structure--&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"modal fade"</span> <span class="na">id</span><span class="o">=</span><span class="s">"YourModal"</span> <span class="na">tabindex</span><span class="o">=</span><span class="s">"-1"</span> <span class="na">aria-labelledby</span><span class="o">=</span><span class="s">"YourModalLabel"</span> <span class="na">aria-hidden</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"modal-dialog"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"modal-content"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span>
+
+      <span class="c">&lt;!-- Create Modal Header--&gt;</span>
+      <span class="s">"modal-header"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h5</span> <span class="na">class</span><span class="o">=</span><span class="s">"modal-title"</span> <span class="na">id</span><span class="o">=</span><span class="s">"YourModalLabel"</span><span class="p">&gt;</span>Your Modal title<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn-close"</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">"modal"</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">"Close"</span><span class="p">&gt;&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span>
+
+       <span class="c">&lt;!-- Create Modal Body--&gt;</span>
+      <span class="s">"modal-body"</span><span class="p">&gt;</span>
+        Your modal content here.
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span>
+      
+       <span class="c">&lt;!-- Create Modal Footer--&gt;</span>
+      <span class="s">"modal-footer"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-bs-dismiss</span><span class="o">=</span><span class="s">"modal"</span><span class="p">&gt;</span>Close<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">"button"</span> <span class="na">class</span><span class="o">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Save changes<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+  <br>
+        <p>Click the button to open an example of the basic modal.</p>
+
+      <!--Trigger Button -->  
+       <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        Open modal
+      </button>
+    </div>
+    <br>
+     
+    
+    <!-- The Modal -->
+       <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Yay! You created a Modal
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save Changes</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fullscreen-modal">
+    <div class="container mt-3">
+       <div class="row justify-content-start">
+        <div class="col-lg-12 md-8 sm-6">
+      <h3>Fullscreen Modal Example</h3>
+      <p>To create a modal that covers the entire viewport of a user's screen add the default tag <code>.modal-fullscreen</code> .</p> The table below shows tags to style the modal as fullscreen at these break points. The default Bootstrap modal is medium sized modal. <br>
+      <table class="table table-responsive{-sm|-md|-lg|-xl|-xxl}">
+  <thead>
+    <tr>
+      <th>Size</th>
+      <th>Class</th>
+      <th>Modal max-width</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Small</td>
+      <td><code>.modal-sm</code></td>
+      <td><code>300px</code></td>
+    </tr>
+    <tr>
+      <td>Default</td>
+      <td class="text-muted">None</td>
+      <td><code>500px</code></td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td><code>.modal-lg</code></td>
+      <td><code>800px</code></td>
+    </tr>
+    <tr>
+      <td>Extra large</td>
+      <td><code>.modal-xl</code></td>
+      <td><code>1140px</code></td>
+    </tr>
+  </tbody>
+</table>
+     
+     <!--Trigger Button -->
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-fullscreen">
+        Open full screen modal
+      </button>
+    </div>
+    <br>
+     
+    
+    <!-- The Modal -->
+       <div class="modal fade" id="modal-fullscreen">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Yay! You created a full screen Modal..</p>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="bg-light" id="scrollable-LM">
+  <div class="container mt-3">
+     <div class="row justify-content-start">
+        <div class="col-lg-12 md-8 sm-6">
+    <h3>Scrolling Long Content</h3>
+    <p>When content is too long to fit on a device's viewport, they scroll independent of the page itself. Add a <code>.modal-dialog-scrollable</code> to <code>.modal.dialog</code><br>
+    Click the button to open the scrollable modal.</p> 
+    <br>
+
+    <!--Trigger Button -->
+    <div><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-scrollable">
+        Open Scrollable modal
+      </button>
+    </div>
+    <br>
+     
+    
+    <!-- The Modal -->
+       <div class="modal fade" id="modal-scrollable">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p>Yay! You created a scrollable Modal. We used several break tags to show what we mean.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="vertically-centered">
+    <div class="container mt-3">
+       <div class="row justify-content-start">
+        <div class="col-lg-12 md-8 sm-6">
+      <h3>Vertically Centered</h3>
+      <p> Add <code>.modal-dialog-centered</code> to <code>.modal-dialog</code> to vertically center a modal. <br>
+        Click on the button to open the modal in center.</p>
+
+      <!--Trigger Button -->
+       <div>
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-center">
+        Open modal
+      </button>
+    </div>
+    <br>
+     
+    
+    <!-- The Modal -->
+       <div class="modal fade" id="modal-center">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            Yay! You created a vertically centered Modal
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+     <!-- Footer-->
+        <footer>
+            <div class="container mt-3"><p class="m-0 text-center text-white">Copyright &copy; 2022 Bootstrap Modal Cheatsheet by Solomia Nebesh and David Osei</p></div>
+        </footer>
+
+    <!-- Script src needed for the Modal to work  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
