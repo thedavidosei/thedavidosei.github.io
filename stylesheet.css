@@ -3,6 +3,11 @@
   background-color: rgb(236, 243, 252)
 }
 
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(20, 33, 86)
+}
+
 .navbar {
   position: absolute;
   display: flex;

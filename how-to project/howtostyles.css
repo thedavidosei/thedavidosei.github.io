@@ -1,0 +1,73 @@
+/*Navbar*/
+
+.navbar {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  font-family: Barlow, sans-serif;
+  font-weight: 600;
+  justify-content: flex-end;
+}
+.navlink{
+  color: blue;
+}
+
+header {
+  padding-top: 9.5rem;
+  padding-bottom: 8rem;
+  font-family: League Gothic;
+  background-color:white;
+}
+
+h1 {
+  font-family: League Gothic, sans-serif;
+  font-size: 5.3rem;
+  line-height: 110px;
+  text-decoration: underline;
+  text-decoration-color: rgba(19, 14, 255, 1) ;
+}
+
+h2 {
+  font-family: League Gothic, sans-serif;
+  font-size: 3.75rem;
+  line-height: 72px;
+}
+
+h3 {
+  font-family: League Gothic, sans-serif;
+  font-size: 2.5rem;
+  line-height: 72px;
+}
+
+h4 {
+  font-family: League Gothic, sans-serif;
+  font-size: 2rem;
+  line-height: 72px;
+}
+
+h5 {
+  font-family: League Gothic, sans-serif;
+  font-size: 1.5rem;
+  line-height: 72px;
+}
+
+h6 {
+  font-family: League Gothic, sans-serif;
+  font-size: 1rem;
+  line-height: 72px;
+}
+
+p{
+  font-family: Barlow, sans-serif;
+  font-size: 1.2rem;
+  line-height: 24px;
+  padding-top: 1rem;
+}
+
+.lead {
+  padding-top: 1rem;
+}
+
+section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
