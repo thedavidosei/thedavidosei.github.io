@@ -65,9 +65,16 @@ p{
 
 .lead {
   padding-top: 1rem;
+  line-height: 2rem;
 }
 
 section {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+ul {
+  font-family: Barlow, sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
