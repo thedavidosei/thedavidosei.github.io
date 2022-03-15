@@ -78,3 +78,10 @@ ul {
   font-size: 1.2rem;
   line-height: 2rem;
 }
+#navbarNav {
+  margin-left: 400px;
+}
+
+#mylist {
+  font-family: Barlow !important;
+}
