@@ -1,0 +1,24 @@
+body {
+  position:relative;
+}
+
+#home {
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-left: 4rem;
+  background-image: url(assets/blacko_bgimage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #090F11;
+
+}
+
+.main-logo {
+  width: 40vw;
+  padding: 2rem,1rem,1rem,2rem;   
+}
+
+.icons {
+  width: 60px;
+}
