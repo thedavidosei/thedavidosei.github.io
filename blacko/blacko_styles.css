@@ -1,24 +1,134 @@
 body {
   position:relative;
+  overflow: auto;
 }
 
-#home {
-  min-height: 100vh;
+#home{
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
+  min-height: 90vh;
   padding-top: 8rem;
   padding-left: 4rem;
-  background-image: url(assets/blacko_bgimage.png);
-  background-position: center;
+  padding-bottom: 2rem;
+}
+
+.hero-logo{
+  justify-content: center;
+  padding-top: 10rem;
+  padding-left: 5rem;
+  min-width: 50vw;
+}
+
+.nav-link {
+  color: #FF5714;
+  
+}
+
+.nav-link:hover {
+  color: #FF5714;
+}
+
+#music {
+  background-color: rgba(255, 235, 228, 1);
+  min-height: 100vh;
+  padding-top: 10rem;
+}
+
+#bio {
+  background-color: rgba(9, 15, 17, 1);
+  min-height: 60vh;
+  padding-top: 10rem;
+  padding-left: 4rem;
+
+}
+
+#tours {
+  background-color: black;
+  min-height: 80vh;
+  padding-top: 10rem;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-color: #090F11;
 
 }
 
-.main-logo {
-  width: 40vw;
-  padding: 2rem,1rem,1rem,2rem;   
+
+
+
+/*Typography Styles*/
+
+h1{
+font-family: juniper-std,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 6rem;
+color: #FF5714;
 }
 
-.icons {
-  width: 60px;
+h2 {
+  font-family: degular, sans-serif;
+  font-size: 3.75rem;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: degular, sans-serif;
+  font-size: 2.5rem;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: degular, sans-serif;
+  font-size: 2rem;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: degular, sans-serif;
+  font-size: 1.5rem;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+h6 {
+  font-family: degular, sans-serif;
+  font-size: 1rem;
+  line-height: 72px;
+  font-weight: 600;
+}
+
+p{
+  font-family: degular, sans-serif;
+  font-size: 1.5rem;
+  line-height: 30px;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+
+.navbar {
+  font-family: degular, sans-serif;
+  color: #FF5714;
+  font-weight: 400;
+  font-size: 1.625rem;
+
+}
+
+.btn-outline-primary{
+  border-color: #D2FF15;
+  font-family: degular,sans-serif;
+  font-size: 30px;
+  color: white;
+  border-radius: 0;
+  transition-duration: 0.4s;
+}
+
+.btn-outline-primary :hover, .btn-outline-primary :focus, .btn-outline-primary :active {
+  border-color: #D2FF15 !important;
+  color: white;
+  border-radius: 0;
 }
