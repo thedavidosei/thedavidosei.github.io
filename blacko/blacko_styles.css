@@ -8,17 +8,23 @@ body {
   background-repeat: no-repeat;
   background-position: relative;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 100vh;
   padding-top: 8rem;
   padding-left: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
 }
 
 .hero-logo{
   justify-content: center;
-  padding-top: 10rem;
+  padding-top: 3rem;
   padding-left: 5rem;
-  min-width: 50vw;
+  min-width: 40vw;
+
+}
+
+#music-links{
+  padding-top: 2rem;
+
 }
 
 .nav-link {
@@ -33,7 +39,7 @@ body {
 #music {
   background-color: rgba(255, 235, 228, 1);
   min-height: 100vh;
-  padding-top: 10rem;
+  padding-top: 8rem;
 }
 
 #bio {
@@ -45,15 +51,34 @@ body {
 }
 
 #tours {
-  background-color: black;
-  min-height: 80vh;
+  background-color: rgba(9, 15, 17, 1);
+  min-height: 100vh;
   padding-top: 10rem;
+  padding-bottom: 4rem;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
 }
 
+#contact {
+  background-color: rgba(9, 15, 17, 1);
+  min-height: 80vh;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+.contact-box{
+  display: block;
+}
+
+.logo-alt {
+  position: absolute;
+  left: 9.92%;
+  right: 70.04%;
+  top: 95%;
+  bottom: 50%;
+}
 
 
 
