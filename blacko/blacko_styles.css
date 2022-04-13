@@ -17,7 +17,7 @@ body {
 .hero-logo{
   justify-content: center;
   padding-top: 3rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
   min-width: 40vw;
 
 }
@@ -80,8 +80,25 @@ body {
   bottom: 50%;
 }
 
+.music-links {
+  display: inline-block;
+  max-width: 15%;
+  margin: 0 2.5%;
+}
 
+#music-link-box{
+  display: block;
+}
 
+.social-links {
+  display: inline-block;
+  max-width: 15%;
+  margin: 0 2.5%;
+}
+
+#social-links-box{
+  display: block;
+}
 /*Typography Styles*/
 
 h1{
