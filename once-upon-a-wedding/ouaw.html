@@ -23,8 +23,8 @@
   <body>
     <header>
 <!--Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container jusify-content-space-between">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center">
+  <div class="container ">
   <a href="#"class="navbar-brand mb-0 mt-3">
   <img class="d-inline-block align-top"
   src="ouaw_assets/OUAW logo_white.svg" width="150" alt="ouaw-logo"> 
@@ -63,28 +63,36 @@ aria-label="Toggle navigation"
 </div>
 </nav>
 
-  <div class="container-fluid mt-8 pt-6" style="max-height: 50vh;">
+  <div class="container-fluid mt-8 pt-6" style="min-height: 100vh;background-color: #003049;">
  <div class="row g-0 justify-content-center">
    <div class="col-lg-6 col-md-6 col-sm-6 align-items-start justify-content-center pt-3 ps-5  text-white" style="background-color: #003049;">
-     <h1 style="font-size:5.5vw">Real wedding stories. <br> Real couples.</h1>
-     <p class="lead w-75 pb-1"style="font-size:2vw">Offering the best wedding & marriage lessons through real life experiences in Ghana and beyond</p>
-     <button class="button button1 px-3 " >Watch latest episode
+     <h1 style="font-size:6vw">Real wedding stories. <br> Real couples.</h1>
+     <p class="lead w-75 pb-3"style="font-size:3vw; line-height:3vw">
+       Wedding & marriage lessons through real life experiences in Ghana and beyond</p>
+     <div class="mb-1 pb-2">
+     <button class="button button1 px-3 ">Watch latest episode
     </button>
-     
+    </div>
    </div>
    <div class="col-lg-6 col-md-6 col-sm-6" style="min-height: 100%;">
     <img class="bg-img img-fluid w-100 h-100" src="ouaw_assets/George+Delsy.png" alt="George + Delsy">
+    </div>
  </div>
  </div>
 </div>
-    </header>
+</header>
     
     <!-- Main content -->
+
+     <!-- Featured Stories -->
     <section class="p-5" style="background-color: #FFE8D6;min-height: 60vh;">
       <div class="container">
         <div class="row justify-content-center g-4">
           <h2 class="text-center mb-5 mt-5" style="color: #003049;">
-          Featured Episodes</h2>
+          Featured Stories
+        </h2>
+
+        <!-- Story Video Card -->
           <div class="col-lg-4 col-md-3 col-sm-1 mx-auto">
             <div class="card pb-3" style="width: 18rem;">
               <video src="ouaw_assets/That_One_Church_Girl_s03E9_preview.mp4" controls></video>
@@ -96,16 +104,7 @@ aria-label="Toggle navigation"
             </div>
            </div>
 
-           <div class="col-lg-4 col-md-3 col-sm-1 mx-auto">
-            <div class="card" style="width: 18rem;">
-              <video src="ouaw_assets/That_One_Church_Girl_s03E9_preview.mp4" controls></video>
-              <div class="card-body">
-                <h5 class="card-title">That Church Girl: S03E09</h5>
-                <p class="card-text">George and Delsy tell us all about their wedding experience</p>
-                <a href="#" class="btn btn-primary">Watch Full Episode</a>
-              </div>
-            </div>
-           </div>
+        <!-- Story Video Card -->
 
            <div class="col-lg-4 col-md-3 col-sm-1 mx-auto">
             <div class="card" style="width: 18rem;">
@@ -118,15 +117,32 @@ aria-label="Toggle navigation"
             </div>
            </div>
 
-          <h5 class="text-center mt-5"><a href="once_upon_a_wedding/videos.html" style="color: #003049">Watch all Episodes</a>
+        <!-- Story Video Card -->
+
+           <div class="col-lg-4 col-md-3 col-sm-1 mx-auto">
+            <div class="card" style="width: 18rem;">
+              <video src="ouaw_assets/That_One_Church_Girl_s03E9_preview.mp4" controls></video>
+              <div class="card-body">
+                <h5 class="card-title">That Church Girl: S03E09</h5>
+                <p class="card-text">George and Delsy tell us all about their wedding experience</p>
+                <a href="#" class="btn btn-primary">Watch Full Episode</a>
+              </div>
+            </div>
+           </div>
+
+          <h5 class="text-center mt-5"><a href="once_upon_a_wedding/videos.html" style="color: #003049">Watch all Stories</a>
           </h5>
            </div>
     </section>
+
+    <!-- Vendors Section -->
 
     <section class="p-5" style="background-color: #955c85;min-height: 50vh;">
       <h2 class="text-center text-white mb-5">Vendors</h2>
       <p class="lead text-center pb-5 text-white">We know planning your big day can be stressful. <br> So we have decided to make it a little easier for you by curating a list of vendors for every budget and style. </p>
       <div class="row row-cols-1 row-cols-lg-3 row-cols-flex g-5 justify-content-center">
+
+       <!-- Vendor Card -->
         <div class="col">
           <div class="card card-clean">
             <div class="card-header text-white p-0 position-relative">
@@ -140,6 +156,8 @@ aria-label="Toggle navigation"
             </div>
           </div>
         </div>
+
+        <!-- Vendor Card -->
         <div class="col">
           <div class="card card-clean">
             <div class="card-header text-white p-0 position-relative">
@@ -152,6 +170,8 @@ aria-label="Toggle navigation"
             </div>
           </div>
         </div>
+
+        <!-- Vendor Card -->
 
         <div class="col">
           <div class="card card-clean">
@@ -166,7 +186,9 @@ aria-label="Toggle navigation"
           </div>
         </div>
 
-        <h5 class="text-center mt-5 text-white"><a href="once_upon_a_wedding/videos.html" style="color: #ffffff">Browse Vendors</a>
+        <!-- Browse Vendors -->
+
+        <h5 class="text-center mt-5 text-white"><a href="once_upon_a_wedding/stories.html" style="color: #ffffff">Browse Vendors</a>
         </h5>
         </div>
       </section>
@@ -185,11 +207,15 @@ aria-label="Toggle navigation"
           </div>
               </section>
 
+  <!-- Footer -->
+
    <footer>
     <section class="p-5" style="background-color: #003049;min-height: 40vh;">
       <div class="container">
         <div class="row mt-3">
           <div class="col-lg-4 col-md-3 col-sm-6 mb-4">
+
+            <!-- Footer logo-->
             <a href="#"class="navbar-brand mb-0 mt-3">
               <img class="d-inline-block align-top"
               src="ouaw_assets/OUAW logo_white.svg" width="150" alt="ouaw_logo"> 
@@ -201,6 +227,8 @@ aria-label="Toggle navigation"
               </small>
             </p>
           </div>
+
+          <!-- Footer links-->
           <div class="col-lg-2 col-md-2 col-sm-1">
             <h6 class="text-uppercase text-white mb-1">
               Home
