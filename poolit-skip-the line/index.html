@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FullScreenLandingPage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <!--Stylesheet-->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!--Inter Font Family-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<h1>You are #XXX on our waitlist</h1>
+		<p>Scan the code below to move up the line</p>
+    <img src="assets/form-qr-code.png" alt="qr-code">
+    <a href="#upform"><p>or click here to start</p></a>
+    <span id="down">&#8595;</span>
+	</header>
+
+
+  <div class="upform">
+
+
+    <form id="upform">
+  
+      <div class="upform-header"></div>
+  
+      <div class="upform-main">
+  
+  
+        <div class="input-block">
+          <div class="label">Q1. If we give you a proven system to make at least $7,500 per month online, would you follow it to a tee?</div>
+          <div class="input-control">
+            <input id="toggle-on-q1" class="toggle toggle-left" name="q1" value="yes" type="radio">
+            <label for="toggle-on-q1" class="btn"><span>A</span> Yes</label>
+            <input id="toggle-off-q1" class="toggle toggle-right" name="q1" value="no" type="radio">
+            <label for="toggle-off-q1" class="btn"><span>B</span> No</label>
+          </div>
+        </div>
+  
+        <div class="input-block">
+          <div class="label">Q2. Would you be willing to invest at least 30 minutes per day to make it work?</div>
+          <div class="input-control">
+            <input id="toggle-on-q2" class="toggle toggle-left" name="q2" value="yes" type="radio">
+            <label for="toggle-on-q2" class="btn"><span>A</span> Yes</label>
+            <input id="toggle-off-q2" class="toggle toggle-right" name="q2" value="no" type="radio">
+            <label for="toggle-off-q2" class="btn"><span>B</span> No</label>
+          </div>
+        </div>
+  
+        <div class="input-block">
+          <div class="label">Q3. Would you like to get started NOW?</div>
+          <div class="input-control">
+            <input id="toggle-on-q3" class="toggle toggle-left" name="q3" value="yes" type="radio">
+            <label for="toggle-on-q3" class="btn"><span>A</span> Yes</label>
+            <input id="toggle-off-q3" class="toggle toggle-right" name="q3" value="no" type="radio">
+            <label for="toggle-off-q3" class="btn"><span>B</span> No</label>
+          </div>
+        </div>
+  
+        <div class="input-block">
+          <div class="label">What is your name?</div>
+          <div class="input-control">
+            <input type="text" class="required" autocomplete="off">
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="upform-footer">
+        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+      </div>
+  
+    </form>
+  
+  
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+
+	$(document).ready( function () {
+	$('#down').on('click',function () {
+		$("html").scrollTop(0);
+		console.log("Clicked!");
+		 $('html, body').animate({
+        scrollTop: $(".main").offset().top
+    }, 1000);
+	});
+});
+</script>
+</body>
+</html>
